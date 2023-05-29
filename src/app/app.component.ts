@@ -15,5 +15,16 @@ export class AppComponent {
       console.warn(data)
       this.data=data;
     })
+
+    this.user.getData1().subscribe(data => {
+      console.log(data)
+        this.data=data;
+
+    })
   }
 }
+
+
+// this.user.getData1().subscribe(data => {
+//       console.log(data);
+//     })
